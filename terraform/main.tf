@@ -64,7 +64,7 @@ resource "aws_security_group" "nestjs_sg" {
 }
 
 resource "aws_instance" "nestjs" {
-  ami                         = "ami-06784e9934d6ab0f5"
+  ami                         = "ami-0ce38a2f3292a6524"
   instance_type               = "t2.small"
   vpc_security_group_ids         = [aws_security_group.nestjs_sg.id]
   associate_public_ip_address = true
