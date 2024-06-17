@@ -15,7 +15,7 @@ provider "aws" {
 ##
 
 resource "aws_vpc" "nestjs_vpc" {
-  cidr_block = var.CIDR
+  cidr_block = "10.0.0.0/16"
   tags = {
     name = "vpc-nestjs"
   }
