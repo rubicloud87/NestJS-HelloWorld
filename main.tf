@@ -23,7 +23,7 @@ resource "aws_vpc" "nestjs_vpc" {
 
 resource "aws_subnet" "public_subnet1" {
   vpc_id            = aws_vpc.nestjs_vpc.id
-  cidr_block        = var.CIDR-PUBLIC
+  cidr_block        = "10.0.1.0/24"
   availability_zone = "us-east-1a"
 }
 
