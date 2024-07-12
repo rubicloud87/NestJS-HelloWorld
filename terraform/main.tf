@@ -70,3 +70,13 @@ resource "aws_instance" "nestjs" {
   associate_public_ip_address = true
   subnet_id = aws_subnet.public_subnet1.id
 }
+inline = [
+    "git clone https://github.com/rubicloud87/NestJS-HelloWorld.git",
+    "sudo apt update",
+    "sudo apt install -y nodejs npm",
+    "cd nest-hello-world",
+    "npm install",
+    "npm run start"
+  ]
+
+}
